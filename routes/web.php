@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/stefan', function () {
-    return 'cao ja sam stefan'
+    return 'cao ja sam stefan';
 });
