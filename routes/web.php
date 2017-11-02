@@ -20,3 +20,8 @@ Route::get('/stefan', function () {
 Route::get('/todor', function() {
     return 'cao ja sam todor';
 });
+
+//to je to sad push? sad opet komit pa push
+
+//ako nisi siguran uvek uradi prvo pul, da bismo odrzali sve na lokalu i serveru sinhronizovano
+//ako je ovo plavo, znaci da moras da komitujes
