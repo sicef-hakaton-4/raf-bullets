@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/todor', function() {
+    return 'cao ja sam todor';
+});
