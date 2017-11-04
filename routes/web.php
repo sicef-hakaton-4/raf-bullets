@@ -24,6 +24,8 @@ Route::get('register-as', function () {
    return view('auth.register-as');
 });
 
+Route::get('test', 'TestController@index');
+
 Route::get('register-company', 'CompanyController@register');
 Route::post('register-company', 'CompanyController@storeRegistration');
 Route::get('company/config', 'CompanyController@config');
