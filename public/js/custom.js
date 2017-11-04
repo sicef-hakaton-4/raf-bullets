@@ -1,11 +1,11 @@
 var currentImage = 0;
 
-function nextTrue(companies) {
+function nextImageTrue(companies) {
     currentImage = (currentImage+1)%companies.length;
     $('.slide-img').attr("src", companies[currentImage].image);
 }
 
-function nextFalse(companies) {
+function nextImageFalse(companies) {
     currentImage = (currentImage+1)%companies.length;
     $('.slide-img').attr("src", companies[currentImage].image);
 }
@@ -20,4 +20,13 @@ function love(companies) {
 
 function closeSlider() {
     $('.images-slider').hide();
+}
+
+function nextMotoTrue(companies) {
+    currentImage = (currentImage+1)%companies.length;
+    $('.moto-text').html(companies[currentImage].moto);
+}
+
+function nextMotoFalse(companies) {
+
 }
