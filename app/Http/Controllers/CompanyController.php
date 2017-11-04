@@ -21,4 +21,8 @@ class CompanyController extends Controller
 
         return redirect('/');
     }
+
+    public function config() {
+        return view('company.config');
+    }
 }
