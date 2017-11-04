@@ -17,3 +17,7 @@ function love(companies) {
     }});
     // window.location.href = '/company/'+company.id
 }
+
+function closeSlider() {
+    $('.images-slider').hide();
+}

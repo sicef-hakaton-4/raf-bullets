@@ -25,11 +25,11 @@ class DeveloperController extends Controller
 
 
     public function storeCompany($companyId){
-//        dd(Auth::user());
-//        $developer = Developer::find($developerId);
+//        dd(Auth::user()->id);
+        $developer = Developer::where('user_id', Auth::user()->id)->first();
+//dd($developer);
+        $developer->companies()->attach($companyId);
 
-//        $developer->companies()->attach($companyId);
-//
         return response()->json(['success' => true]);
     }
 }

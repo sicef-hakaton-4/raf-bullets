@@ -32,6 +32,7 @@ Route::get('company/config', 'CompanyController@config');
 Route::get('company/test/make', 'CompanyController@makeTest');
 Route::get('company/{id}', 'CompanyController@getCompany');
 Route::get('company/job/new', 'CompanyController@newJob');
+Route::get('company/job/index', 'CompanyController@indexJob');
 
 
 Route::get('register-developer', 'DeveloperController@register');

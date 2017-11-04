@@ -39,4 +39,8 @@ class CompanyController extends Controller
     public function newJob() {
         return view('company.new-job');
     }
+
+    public function indexJob() {
+        return view('company.index-job');
+    }
 }
