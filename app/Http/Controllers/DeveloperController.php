@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Company;
 use Illuminate\Http\Request;
 
 class DeveloperController extends Controller
@@ -11,7 +12,8 @@ class DeveloperController extends Controller
     }
 
     public function index() {
-        return view('developer.index');
+        $companies = Company::all();
+        return view('developer.index', compact('companies'));
     }
 
     public function config() {
