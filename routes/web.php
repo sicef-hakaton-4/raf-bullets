@@ -15,9 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/stefan', function () {
-    return 'cao ja sam stefan';
-})->middleware(\App\Http\Middleware\CompanyAuth::class);
 
 Auth::routes();
 
@@ -28,4 +25,10 @@ Route::get('register-as', function () {
 });
 
 Route::get('register-company', 'CompanyController@register');
+Route::post('register-company', 'CompanyController@storeRegistration');
+Route::get('company/config', 'CompanyController@config');
+
+
 Route::get('register-developer', 'DeveloperController@register');
+Route::get('developer/config', 'DeveloperController@config');
+Route::get('developer/index', 'DeveloperController@index');
