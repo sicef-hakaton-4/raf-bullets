@@ -25,4 +25,8 @@ class CompanyController extends Controller
     public function config() {
         return view('company.config');
     }
+
+    public function makeTest() {
+        return view('company.test.make');
+    }
 }
