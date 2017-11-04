@@ -10,3 +10,7 @@ function nextFalse(companies) {
     $('.slide-img').attr("src", companies[currentImage].image);
 }
 
+function love(companies) {
+    var company = companies[currentImage];
+    window.location.href = '/company/'+company.id
+}
