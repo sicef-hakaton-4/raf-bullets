@@ -32,8 +32,8 @@ class CompanyController extends Controller
     }
 
     public function getCompany($id) {
-        $company = Company::find($id);
-        return view('company.company-page', compact('company'));
+//        $company = Company::find($id);
+        return view('company.company-page');
     }
 
     public function newJob() {
