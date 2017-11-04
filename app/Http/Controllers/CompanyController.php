@@ -36,6 +36,9 @@ class CompanyController extends Controller
         return view('company.company-page');
     }
 
+    public function developers() {
+        return view('company.developers');
+    }
     public function newJob() {
         return view('company.new-job');
     }

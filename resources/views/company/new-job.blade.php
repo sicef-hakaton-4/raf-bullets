@@ -11,7 +11,16 @@
                 <td><select name="positions" class="form-control">
                         <option value="" disabled selected>Choose position..</option>
                         <option value="junior">Junior Developer</option>
+                        <option value="intermediate">intermediate Developer</option>
                         <option value="senior">Senior Developer</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td>Type of the position</td>
+                <td><select name="positions-type" class="form-control">
+                        <option value="" disabled selected>Choose position..</option>
+                        <option value="junior">Engineering</option>
+                        <option value="game-design">Game Design</option>
                     </select></td>
             </tr>
             <tr>
