@@ -26,7 +26,7 @@
                     </select></td>
             </tr>
             <tr>
-                <td>What kind of project?</td>
+                <td>What is the title of the job?</td>
                 <td><input type="text" class="form-control"></td>
             </tr>
             <tr>
