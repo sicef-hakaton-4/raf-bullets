@@ -8,7 +8,7 @@
                     <div class="panel-heading">Register company</div>
 
                     <div class="panel-body">
-                        <form class="form-horizontal" method="POST" action="{{ route('register') }}">
+                        <form class="form-horizontal" method="POST" action="{{ url('register-company') }}">
                             {{ csrf_field() }}
 
                             <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
