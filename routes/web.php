@@ -28,6 +28,7 @@ Route::get('register-company', 'CompanyController@register');
 Route::post('register-company', 'CompanyController@storeRegistration');
 Route::get('company/config', 'CompanyController@config');
 Route::get('company/test/make', 'CompanyController@makeTest');
+Route::get('company/{id}', 'CompanyController@getCompany');
 
 
 Route::get('register-developer', 'DeveloperController@register');
