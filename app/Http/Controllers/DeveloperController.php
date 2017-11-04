@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use App\Developer;
+use App\Job;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -15,7 +16,8 @@ class DeveloperController extends Controller
 
     public function index() {
         $companies = Company::all();
-        return view('developer.index', compact('companies'));
+        $jobs = Job::all();
+        return view('developer.index', compact('companies', 'jobs'));
     }
 
     public function config() {
