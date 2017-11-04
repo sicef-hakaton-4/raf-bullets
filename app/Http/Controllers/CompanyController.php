@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Company;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -28,5 +29,10 @@ class CompanyController extends Controller
 
     public function makeTest() {
         return view('company.test.make');
+    }
+
+    public function getCompany($id) {
+        $company = Company::find($id);
+        return view('company.company-page', compact('company'));
     }
 }
