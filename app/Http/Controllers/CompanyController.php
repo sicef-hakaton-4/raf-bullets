@@ -35,4 +35,8 @@ class CompanyController extends Controller
         $company = Company::find($id);
         return view('company.company-page', compact('company'));
     }
+
+    public function newJob() {
+        return view('company.new-job');
+    }
 }

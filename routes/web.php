@@ -24,13 +24,17 @@ Route::get('register-as', function () {
    return view('auth.register-as');
 });
 
+Route::get('test', 'TestController@index');
+
 Route::get('register-company', 'CompanyController@register');
 Route::post('register-company', 'CompanyController@storeRegistration');
 Route::get('company/config', 'CompanyController@config');
 Route::get('company/test/make', 'CompanyController@makeTest');
 Route::get('company/{id}', 'CompanyController@getCompany');
+Route::get('company/job/new', 'CompanyController@newJob');
 
 
 Route::get('register-developer', 'DeveloperController@register');
 Route::get('developer/config', 'DeveloperController@config');
 Route::get('developer/index', 'DeveloperController@index');
+Route::get('developer/company/{companyId}', 'DeveloperController@storeCompany');

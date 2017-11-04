@@ -12,5 +12,8 @@ function nextFalse(companies) {
 
 function love(companies) {
     var company = companies[currentImage];
-    window.location.href = '/company/'+company.id
+    $.ajax({url: "/developer/company/"+company.id, success: function(result){
+        console.log(result);
+    }});
+    // window.location.href = '/company/'+company.id
 }
