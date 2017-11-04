@@ -35,6 +35,53 @@
         <p><em>Engineering</em></p>
         <p>As a senior rendering engineer, you will collaborate with other technical leaders and content creators to design and lead implementation of innovative new rendering features that will push the level of visual fidelity of our mobile games to console quality.</p>
         <br>
+        <table class="table">
+            <tr>
+                <td><strong>Position</strong></td>
+                <td>Senior Developer</td>
+            </tr>
+            <tr>
+                <td><strong>Type</strong></td>
+                <td>Full Time</td>
+            </tr>
+            <tr>
+                <td><strong>Location</strong></td>
+                <td>Belgrade</td>
+            </tr>
+            <tr>
+                <td><strong>Programming Languages Skills</strong></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>HTML: 3</td>
+                        </tr>
+                        <tr>
+                            <td>Python: 4</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>Areas of the job</strong></td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>Front-end</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Systems</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <table class="table">
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-success" style="width: 125px;">Complete test</button>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <footer class="container-fluid text-center">

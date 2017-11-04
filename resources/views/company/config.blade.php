@@ -39,7 +39,9 @@
                 <td>Pictures</td>
             </tr>
             <tr>
-                <td><button type="button" name="kreiraj" class="form-control">Upload picture</td>
+                <td>
+                    <button type="button" class="btn btn-success" style="width: 125px;">Upload picture</button>
+                </td>
             </tr>
             <tr>
                 <img src="" alt="Image" width="139" height="150" class="form-control">
@@ -74,39 +76,20 @@
         <h2>Jobs</h2>
         <h4>New job</h4>
         <table class="table">
-            <tr>
-                <td>Name</td>
-                <td><input type="text" class="form-control"></td>
-            </tr>
-            <tr>
-                <td>Category</td>
-                <td><select name="cars" class="form-control">
-                        <option value="volvo">Kategorija 1</option>
-                        <option value="saab">Kategorija 2</option>
-                        <option value="fiat">Kategorija 3</option>
-                        <option value="audi">Kategorija 4</option>
-                    </select></td>
-            </tr>
-            <tr>
-                <td>Description</td>
-                <td><input type="text-area" class="form-control"></td>
-            </tr>
-            <tr>
-                <td>Requirements</td>
-                <td><input type="text-area" class="form-control"></td>
-            </tr>
-            <tr>
-                <td>Optional qualities</td>
-                <td><input type="text-area" class="form-control"></td>
-            </tr>
-            <tr>
-                <td><button type="button" name="kreiraj" class="form-control">Create job</td>
-            </tr>
+            <table class="table">
+                <tr>
+                    <td>
+                        <button type="button" class="btn btn-success" style="width: 125px;">Create new job</button>
+                    </td>
+                </tr>
+            </table>
         </table>
 
         <table class="table">
             <tr>
-                <td><button type="button" name="kreiraj" class="form-control">Save</td>
+                <td>
+                    <button type="button" class="btn btn-success" style="width: 125px;">Save</button>
+                </td>
             </tr>
         </table>
 
