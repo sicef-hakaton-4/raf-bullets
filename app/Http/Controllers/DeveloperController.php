@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Company;
+use App\Developer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DeveloperController extends Controller
 {
@@ -18,5 +20,16 @@ class DeveloperController extends Controller
 
     public function config() {
         return view('developer.config');
+    }
+
+
+
+    public function storeCompany($companyId){
+//        dd(Auth::user());
+//        $developer = Developer::find($developerId);
+
+//        $developer->companies()->attach($companyId);
+//
+        return response()->json(['success' => true]);
     }
 }

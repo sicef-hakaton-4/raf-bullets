@@ -24,10 +24,12 @@ class CreateDevelopersTable extends Migration
             $table->string('codeforces')->nullable();
             $table->string('university');
             $table->string('faculty');
-            $table->string('faculty');
             $table->integer('major');
             $table->integer('degree');
             $table->integer('graduation');
+            $table->string('experience');
+            $table->string('company');
+            $table->string('description');
             $table->timestamps();
         });
     }
