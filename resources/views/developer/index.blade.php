@@ -27,17 +27,17 @@
 
     <div class="images-slider text-center" style="; width: 100%; height: 100%; position: absolute; top: 0; ; background-color: #3b3c3d">
         <div style="color: white; position: absolute; top: 40%; height: 300px; width: 100%;" class="text-center moto-text">
-            <span class="job-title" style="font-size: 44px; font-weight: 600">{{ $jobs[0]->title }}</span><br>
+            <span class="job-title" style="font-size: 44px; font-weight: 600">{{ $jobs[0]->title }}</span><br><br>
             <div class="areas">
                 @foreach((explode(',',$jobs[0]->areas)) as $area)
                     <span style="font-size: 34px">{{ App\Job::parseArea($area) }}</span><br>
                 @endforeach
             </div>
         </div>
-        <button class="like" onclick="nextJobTrue({{ $jobs }})">Like</button>
-        <button class="dislike" onclick="nextJobFalse({{ $jobs }})">No</button>
+        <span class="like glyphicon glyphicon-ok" onclick="nextJobTrue({{ $jobs }})"></span>
+        <span class="dislike glyphicon glyphicon-remove-circle" onclick="nextJobFalse({{ $jobs }})"></span>
         <div class="text-center">
-            <button class="love" onclick="love({{ $jobs }})">Love</button>
+            <img src="http://clipartix.com/wp-content/uploads/2016/12/Awesome-clipart-free-download-clip-art-on.png" class="love" onclick="love({{ $jobs }})">
 
         </div>
 

@@ -24,6 +24,9 @@ class DeveloperController extends Controller
         return view('developer.config');
     }
 
+    public function  testMe(){
+        return view('developer.test');
+    }
 
 
     public function storeCompany($companyId){

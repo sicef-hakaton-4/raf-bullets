@@ -9,4 +9,5 @@ class Company extends Model
     public function developers() {
         return $this->belongsToMany(Developer::class);
     }
+
 }

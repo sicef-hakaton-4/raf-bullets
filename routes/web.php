@@ -18,6 +18,10 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('google-test', function (){
+    return view('google-test');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('register-as', function () {
@@ -32,11 +36,18 @@ Route::get('company/config', 'CompanyController@config');
 Route::get('company/test/make', 'CompanyController@makeTest');
 Route::get('company/{id}', 'CompanyController@getCompany');
 Route::get('company/job/new', 'CompanyController@newJob');
-Route::get('company/job/index', 'CompanyController@indexJob');
+Route::Post('company/job/new', 'CompanyController@storeJob');
+Route::get('company/job/{id}', 'CompanyController@indexJob');
 Route::get('company/', 'CompanyController@developers');
 
 
 Route::get('register-developer', 'DeveloperController@register');
-Route::get('developer/config', 'DeveloperController@config');
-Route::get('developer/index', 'DeveloperController@index');
-Route::get('developer/company/{companyId}', 'DeveloperController@storeCompany');
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('developer/config', 'DeveloperController@config');
+    Route::get('developer/index', 'DeveloperController@index');
+    Route::get('developer/company/{companyId}', 'DeveloperController@storeCompany');
+    Route::get('developer/test', 'DeveloperController@testMe');
+
+});

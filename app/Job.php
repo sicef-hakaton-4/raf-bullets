@@ -31,4 +31,28 @@ class Job extends Model
                 break;
         }
     }
+
+    public static function parseLocation($value){
+        switch ($value) {
+            case 0:
+                return 'Belgrade';
+                break;
+            case 1:
+                return 'Nis';
+                break;
+            case 2:
+                return 'Krusevac';
+                break;
+            case 3:
+                return 'Kragujevac';
+                break;
+            case 4:
+                return 'Cacak';
+                break;
+        }
+    }
+
+    public function company() {
+        return $this->belongsTo(Company::class);
+    }
 }

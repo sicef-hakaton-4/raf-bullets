@@ -21,19 +21,19 @@
 
     <div class="jumbotron">
         <div class="container text-center">
-            <img src="https://media-exp1.licdn.com/media/AAEAAQAAAAAAAApzAAAAJDUzMDE2N2VkLWJhODgtNDkyNS1hZTgxLTQwOTEyZWRiYjZmZg.png" alt="Nordeus image" style="width:70%;">
-            <h1 style="font-size:92px">Nordeus</h1>
-            <p style="font-size:32px">Make it happen.</p>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Belgrade</p>
+            <img src="{{ $job->company->image }}" alt="Nordeus image" style="width:70%;">
+            <h1 style="font-size:92px">{{ $job->company->name }}</h1>
+            <p style="font-size:32px">{{ $job->company->moto }}</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>{{ App\Job::parseLocation($job->location) }}</p>
             <table class="table">
             </table>
         </div>
     </div>
 
     <div class="container">
-        <h3>Rendering Engineer</h3>
+        <h3>{{ $job->title }}</h3>
         <p><em>Engineering</em></p>
-        <p>As a senior rendering engineer, you will collaborate with other technical leaders and content creators to design and lead implementation of innovative new rendering features that will push the level of visual fidelity of our mobile games to console quality.</p>
+        <p>{{ $job->description }}</p>
         <br>
         <table class="table">
             <tr>

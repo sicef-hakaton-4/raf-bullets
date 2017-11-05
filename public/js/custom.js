@@ -57,6 +57,7 @@ function parseArea(value) {
     }
 }
 function nextJobTrue(jobs) {
+
     currentIndex = (currentIndex+1)%jobs.length;
     $('.job-title').html(jobs[currentIndex].title);
     var job = jobs[currentIndex];

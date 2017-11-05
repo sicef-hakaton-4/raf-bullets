@@ -15,6 +15,7 @@ class CreateJobTable extends Migration
     {
         Schema::create('jobs', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('company_id');
             $table->integer('position');
             $table->integer('type');
             $table->string('areas')->default('');
@@ -22,7 +23,7 @@ class CreateJobTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->integer('c')->default(0);
-            $table->integer('c++')->default(0);
+            $table->integer('cpp')->default(0);
             $table->integer('Java')->default(0);
             $table->integer('JavaScript')->default(0);
             $table->integer('HTML')->default(0);
