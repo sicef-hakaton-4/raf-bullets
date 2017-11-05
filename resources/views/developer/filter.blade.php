@@ -133,12 +133,12 @@
                         </tr>
                     </table>
                 </div>
-                <div class="col-sm-4"><button class="btn btn-primary" type="submit">Filter</button></div>
+                <div class="col-sm-4"><button class="btn btn-primary" type="submit" onclick="$('.filtered-jobs').show()">Filter</button></div>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid bg-3 text-center">
+    <div class="filtered-jobs container-fluid bg-3 text-center" style="display: none">
         <div class="row">
             <div class="col-sm-4">
                 <table class="table">
