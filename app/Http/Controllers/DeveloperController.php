@@ -26,7 +26,9 @@ class DeveloperController extends Controller
         return view('developer.config');
     }
 
-
+    public function getDeveloperFilter() {
+        return view('developer.filter');
+    }
 
     public function getDeveloper(){
         //prosledi bazu ovde za dev
