@@ -61,4 +61,9 @@ class DeveloperController extends Controller
         return response()->json(['success' => true]);
 
     }
+
+    public function getDeveloperFilter() {
+        $jobs = Job::limit(2)->get();
+        return view('developer.filter', compact('jobs'));
+    }
 }

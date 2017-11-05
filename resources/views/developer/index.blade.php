@@ -62,8 +62,8 @@
 
 
     <div>
-        <div class="col-md-2 col-md-border">
-            <h1 style="font-size:30px; color:DodgerBlue; margin-left: 20px" align="left">Find:</h1>
+        <div class="col-md-3 col-md-border" style="height: 200vh;">
+            <h1 style="font-size:30px; color:DodgerBlue; margin-left: 20px" align="left">Swipe through</h1>
             <br>
             <div style="margin-left: 20px;">
                 <button onclick="$('.moto-slider').show()" type="button" class="btn btn-primary btn-block btn-lg" style="width: 200px;">Moto</button>
@@ -75,7 +75,7 @@
         </div>
         <div class="col-dm-9">
             <div class="text-center">
-                <h1 style="font-size:30px; color:DodgerBlue;" align="left">Companies:</h1>
+                <h1 style="font-size:30px; color:DodgerBlue;" align="left">Companies</h1>
                 <br>
                 <div class="container">
                     <div class="row">

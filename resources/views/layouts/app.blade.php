@@ -42,6 +42,11 @@
                             &nbsp;@if( ! \Auth::user()->company)
                             <li><a href="{{ url('/developer/index') }}">Home</a></li>
                             <li><a href="{{ url('/developer/profile') }}">Profile</a></li>
+                            <li><a href="{{ url('/developer/filter') }}">Filter</a></li>
+                            @else
+                                <li><a href="{{ url('/company/'.\App\Company::where('user_id', \Auth::user()->id)->first()->id) }}">Home</a></li>
+
+                                <li><a href="{{ url('/company/job/new') }}">New Job</a></li>
                             @endif
                         @endif
 

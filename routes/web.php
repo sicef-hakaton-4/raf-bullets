@@ -54,5 +54,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('developer/job/{jobId}', 'DeveloperController@storeJob');
     Route::get('developer/test', 'DeveloperController@testMe');
     Route::get('developer/profile', 'DeveloperController@getProfile');
+    Route::get('developer/filter', 'DeveloperController@getDeveloperFilter');
+
 
 });

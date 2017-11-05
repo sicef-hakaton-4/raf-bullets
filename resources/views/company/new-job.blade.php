@@ -160,7 +160,7 @@
             <table class="table">
                 <tr>
                     <td>
-                        <a href="https://www.google.com/intl/sr_rs/forms/about/" type="button" class="btn btn-default" style="width: 125px;">Make test</a>
+                        <a href="https://www.google.com/intl/sr_rs/forms/about/" type="button" target="_blank" class="btn btn-default" style="width: 125px;">Make test</a>
                     </td>
                     <td>
                         <input type="text" class="form-control" name="test_link">

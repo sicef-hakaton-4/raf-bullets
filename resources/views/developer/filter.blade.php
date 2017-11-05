@@ -140,54 +140,24 @@
 
     <div class="filtered-jobs container-fluid bg-3 text-center" style="display: none">
         <div class="row">
-            <div class="col-sm-4">
-                <table class="table">
-                    <tr>
-                        <td><p style="font-family:verdana;font-size:160%;"><b>Senior Software Engineer</b></p></td>
-                    </tr>
-                    <tr>
-                        <td><p style="font-family:courier;font-size:120%;">Software Engineering</p></td>
-                    </tr>
-                    <tr>
-                        <td>Microsoft</td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn btn-primary" type="submit">Read more</button></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-sm-4">
-                <table class="table">
-                    <tr>
-                        <td><p style="font-family:verdana;font-size:160%;"><b>Web Developer</b></p></td>
-                    </tr>
-                    <tr>
-                        <td><p style="font-family:courier;font-size:120%;">Senior PHP Development</p></td>
-                    </tr>
-                    <tr>
-                        <td>Quantox Technology</td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn btn-primary" type="submit">Read more</button></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="col-sm-4">
-                <table class="table">
-                    <tr>
-                        <td><p style="font-family:verdana;font-size:160%;"><b>Rendering Engineer</b></p></td>
-                    </tr>
-                    <tr>
-                        <td><p style="font-family:courier;font-size:120%;">Engineering</p></td>
-                    </tr>
-                    <tr>
-                        <td>Nordeus</td>
-                    </tr>
-                    <tr>
-                        <td><button class="btn btn-primary" type="submit">Read more</button></td>
-                    </tr>
-                </table>
-            </div>
+            @foreach($jobs as $job)
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tr>
+                            <td><p style="font-family:verdana;font-size:160%;"><b>{{ $job->title }}</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-family:courier;font-size:120%;">{{ $job->description }}</p></td>
+                        </tr>
+                        <tr>
+                            <td>{{ $job->company->name }}</td>
+                        </tr>
+                        <tr>
+                            <td><a href="{{ url('company/job/'.$job->id) }}" class="btn btn-primary" type="submit">Read more</a></td>
+                        </tr>
+                    </table>
+                </div>
+            @endforeach
 
         </div>
     </div><br>
