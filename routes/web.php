@@ -28,13 +28,15 @@ Route::get('register-as', function () {
    return view('auth.register-as');
 });
 
-Route::get('test', 'TestController@index');
+//Route::get('test', 'TestController@index');
 
 Route::get('register-company', 'CompanyController@register');
 Route::post('register-company', 'CompanyController@storeRegistration');
 Route::get('company/config', 'CompanyController@config');
 Route::get('company/test/make', 'CompanyController@makeTest');
 Route::get('company/{id}', 'CompanyController@getCompany');
+Route::get('company/job/{id}/test', 'TestController@index');
+Route::get('company/job/{id}/test-finish', 'TestController@finish');
 Route::get('company/job/new', 'CompanyController@newJob');
 Route::Post('company/job/new', 'CompanyController@storeJob');
 Route::get('company/job/{id}', 'CompanyController@indexJob');
@@ -48,6 +50,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('developer/config', 'DeveloperController@config');
     Route::get('developer/index', 'DeveloperController@index');
     Route::get('developer/company/{companyId}', 'DeveloperController@storeCompany');
+    Route::get('developer/company/{companyId}/delete', 'DeveloperController@deleteCompany');
+    Route::get('developer/job/{jobId}', 'DeveloperController@storeJob');
     Route::get('developer/test', 'DeveloperController@testMe');
+    Route::get('developer/profile', 'DeveloperController@getProfile');
 
 });

@@ -34,8 +34,9 @@ class CompanyController extends Controller
     }
 
     public function getCompany($id) {
-//        $company = Company::find($id);
-        return view('company.company-page');
+        $company = Company::find($id);
+        $jobs = Job::where('company_id', $company->id)->get();
+        return view('company.company-page', compact('company', 'jobs'));
     }
 
     public function developers() {
@@ -58,6 +59,8 @@ class CompanyController extends Controller
         $job->javascript = $request->javascript?$request->javascript:0;
         $job->html = $request->html?$request->html:0;
         $job->python = $request->python?$request->python:0;
+        $job->test_link = $request->test_link;
+        $job->min = $request->min;
 
         $areas = '';
         if(!is_null($request->algorithms)) {

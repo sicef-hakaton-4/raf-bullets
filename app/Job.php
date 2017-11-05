@@ -55,4 +55,8 @@ class Job extends Model
     public function company() {
         return $this->belongsTo(Company::class);
     }
+
+    public function developers() {
+        return $this->belongsToMany(Developer::class);
+    }
 }

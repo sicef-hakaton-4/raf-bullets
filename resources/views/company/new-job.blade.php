@@ -160,7 +160,13 @@
             <table class="table">
                 <tr>
                     <td>
-                        <button type="button" class="btn btn-default" style="width: 125px;">Make test</button>
+                        <a href="https://www.google.com/intl/sr_rs/forms/about/" type="button" class="btn btn-default" style="width: 125px;">Make test</a>
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="test_link">
+                    </td>
+                    <td>
+                        <input type="text" class="form-control" name="min">
                     </td>
                 </tr>
 

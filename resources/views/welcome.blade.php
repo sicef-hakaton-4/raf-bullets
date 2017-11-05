@@ -77,17 +77,14 @@
                 </div>
             @endif
 
-            <div class="content">
+            <div class="content" style="font-weight: 600">
                 <div class="title m-b-md">
                     Tinder za poslove
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div class="links" style="font-weight: 600; font-size: 24px">
+                    <a href="{{ url('/login') }}">Login</a>
+                    <a href="{{ url('/register-as') }}">Register</a>
                 </div>
             </div>
         </div>

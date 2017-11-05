@@ -78,7 +78,7 @@
         <table class="table">
             <tr>
                 <td>
-                    <button type="button" class="btn btn-success" style="width: 125px;">Complete test</button>
+                    <a href="{{url('company/job/'.$job->id.'/test')}}" type="button" class="btn btn-success" style="width: 125px;">Complete test</a>
                 </td>
             </tr>
         </table>
