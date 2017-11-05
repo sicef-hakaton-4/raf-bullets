@@ -237,27 +237,27 @@
                     <form>
                         <div class="checkbox">
                             <label><input type="checkbox" value="">C</label>
-                            <button type="button" class="btn btn-default" style="margin-left: 20px;">Test</button>
+                            <button type="button" class="btn btn-default" >Test</button>
                         </div>
                         <div class="checkbox">
                             <label><input type="checkbox" value="">C++</label>
-                            <button type="button" class="btn btn-default" style="margin-left: 20px;">Test</button>
+                            <button type="button" class="btn btn-default" >Test</button>
                         </div>
                         <div class="checkbox disabled">
                             <label><input type="checkbox" value="">Java</label>
-                            <button type="button" class="btn btn-default" style="margin-left: 20px;">Test</button>
+                            <button type="button" class="btn btn-default" >Test</button>
                         </div>
                         <div class="checkbox disabled">
                             <label><input type="checkbox" value="">JavaScript</label>
-                            <button type="button" class="btn btn-default" style="margin-left: 20px;">Test</button>
+                            <button type="button" class="btn btn-default" >Test</button>
                         </div>
                         <div class="checkbox disabled">
                             <label><input type="checkbox" value="">HTML</label>
-                            <button type="button" class="btn btn-default" style="margin-left: 20px;">Test</button>
+                            <button type="button" class="btn btn-default" >Test</button>
                         </div>
                         <div class="checkbox disabled">
                             <label><input type="checkbox" value="">Python</label>
-                            <button type="button" class="btn btn-default" style="margin-left: 20px;">Test</button>
+                            <button type="button" class="btn btn-default" >Test</button>
                         </div>
                     </form>
                 </td>
