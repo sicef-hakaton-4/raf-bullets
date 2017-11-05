@@ -13,6 +13,9 @@ class DeveloperController extends Controller
         return view('auth.developer.register-developer');
     }
 
+    public function mainView() {
+        return view('developer.developer-main');
+    }
     public function index() {
         $companies = Company::all();
         return view('developer.index');
