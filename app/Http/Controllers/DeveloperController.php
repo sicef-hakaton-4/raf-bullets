@@ -18,7 +18,8 @@ class DeveloperController extends Controller
     }
     public function index() {
         $companies = Company::all();
-        return view('developer.index', compact('companies'));
+        return view('developer.index');
+        //return view('developer.index', compact('companies'));
     }
 
     public function config() {
@@ -27,6 +28,10 @@ class DeveloperController extends Controller
 
 
 
+    public function getDeveloper(){
+        //prosledi bazu ovde za dev
+        return view('developer.developer-page');
+    }
     public function storeCompany($companyId){
 //        dd(Auth::user()->id);
         $developer = Developer::where('user_id', Auth::user()->id)->first();
