@@ -20,34 +20,60 @@
     </nav>
 
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="table">
-                    <tr>
-                        <td><img src="https://pbs.twimg.com/media/DJmnX1cXoAA0OZL.jpg" alt="Nordeus" class="img-circle" style="width: 100px; height: 100px"></td>
-                        <td>
-
-                        </td>
-
-
-                    </tr>
-                    <tr>
-                        <td><button type="button" class="btn btn-primary" style="width: 125px;">Read more</button></td>
-                    </tr>
+        <div class="container-fluid bg-3 text-center">
+            <div class="row">
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tr>
+                            <td><p style="font-family:verdana;font-size:160%;"><b>Test Automation Engineer</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-family:courier;font-size:120%;">Engineering</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><span class="glyphicon glyphicon-map-marker"></span>Belgrade</p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="submit">Read more</button></td>
+                        </tr>
+                    </table>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="thumbnail">
-                    <a href="https://www.apexsql.com/" target="_blank">
-                        <img src="https://pbs.twimg.com/profile_images/876712863632691200/E12HpH3s_400x400.jpg" alt="Apex SQL" class="img-circle" style="width: 100px; height: 100px">
-                        <div class="caption">
-                            <p><em><strong>Work naked.</strong></em></p>
-                        </div>
-                    </a>
-                    <button type="button" class="btn btn-primary" style="width: 125px;">Read more</button>
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tr>
+                            <td><p style="font-family:verdana;font-size:160%;"><b>Lead Game Designer</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-family:courier;font-size:120%;">Game Design</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><span class="glyphicon glyphicon-map-marker"></span>Belgrade</p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="submit">Read more</button></td>
+                        </tr>
+                    </table>
                 </div>
+                <div class="col-sm-4">
+                    <table class="table">
+                        <tr>
+                            <td><p style="font-family:verdana;font-size:160%;"><b>Rendering Engineer</b></p></td>
+                        </tr>
+                        <tr>
+                            <td><p style="font-family:courier;font-size:120%;">Engineering</p></td>
+                        </tr>
+                        <tr>
+                            <td><p><span class="glyphicon glyphicon-map-marker"></span>Belgrade</p></td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-primary" type="submit">Read more</button></td>
+                        </tr>
+                    </table>
+                </div>
+
             </div>
         </div>
+
     </div>
 
     <footer class="container-fluid text-center">
