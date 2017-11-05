@@ -96,7 +96,7 @@
                     <div class="col-md-4">
                         <div class="thumbnail">
                             <a href="https://quantox.com/" target="_blank">
-                                <img src="https://pbs.twimg.com/profile_images/677260375222525952/6sFpzQUk.jpg" alt="Quantox" style="width: 300px; height: 170px">
+                                <img src="https://pbs.twimg.com/profile_images/677260375222525952/6sFpzQUk.jpg" alt="Quantox Technology" style="width: 300px; height: 170px">
                                 <div class="caption">
                                     <p><em><strong>Invest in yourself, become part of our team.</strong></em></p>
                                 </div>

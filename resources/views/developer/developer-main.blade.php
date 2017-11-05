@@ -21,21 +21,33 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="well">
+            <div class="col-md-6">
+                <div class="table">
+                    <tr>
+                        <td><img src="https://pbs.twimg.com/media/DJmnX1cXoAA0OZL.jpg" alt="Nordeus" class="img-circle" style="width: 100px; height: 100px"></td>
+                        <td>
 
-                    <p>Nordeus</p>
-                    <img src="bird.jpg" class="img-circle" height="55" width="55" alt="Avatar">
+                        </td>
+
+
+                    </tr>
+                    <tr>
+                        <td><button type="button" class="btn btn-primary" style="width: 125px;">Read more</button></td>
+                    </tr>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="well">
-                    <p>Quantox Technology</p>
-                    <img src="https://media-exp1.licdn.com/mpr/mpr/shrinknp_400_400/AAIA_wDGAAAAAQAAAAAAAAwiAAAAJGM3MTU5NjEwLWExZTAtNGNmNS05YjMwLTFjNThiM2U4ODgzYg.jpg" class="img-circle" height="100" width="100" alt="Avatar">
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <a href="https://www.apexsql.com/" target="_blank">
+                        <img src="https://pbs.twimg.com/profile_images/876712863632691200/E12HpH3s_400x400.jpg" alt="Apex SQL" class="img-circle" style="width: 100px; height: 100px">
+                        <div class="caption">
+                            <p><em><strong>Work naked.</strong></em></p>
+                        </div>
+                    </a>
+                    <button type="button" class="btn btn-primary" style="width: 125px;">Read more</button>
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer class="container-fluid text-center">
