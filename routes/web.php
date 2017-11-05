@@ -35,6 +35,8 @@ Route::get('company/job/new', 'CompanyController@newJob');
 Route::get('company/job/index', 'CompanyController@indexJob');
 
 
+//dodaj ID za route developer/{id}
+Route::get('developer/', 'DeveloperController@getDeveloper');
 Route::get('register-developer', 'DeveloperController@register');
 Route::get('developer/config', 'DeveloperController@config');
 Route::get('developer/index', 'DeveloperController@index');

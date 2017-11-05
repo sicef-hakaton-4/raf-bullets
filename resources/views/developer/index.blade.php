@@ -21,4 +21,6 @@
 
         <button class="close-slider" onclick="closeSlider()"> X </button>
     </div>
+
+
 @endsection
