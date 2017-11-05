@@ -37,8 +37,11 @@
         <div class="container text-center">
             <h1 style="font-size:30px; color:DodgerBlue;" align="left">Experience</h1>
             <div>
-                <p style="font-size:24px; "align="left"><em><strong>Google, Junior Software Developer</strong> <span>(June 2017 - October 2017)</em></span></p>
-                <p style="font-size:18px;"align="left" >Opis</p>
+                <p style="font-size:24px; "align="left"><em><strong>Google, Junior Software Engineering</strong> <span>(June 2017 - October 2017)</em></span></p>
+                <p style="font-size:18px;"align="left" >Building a YouTube video spam classifier using Machine Learning approaches, as a part
+                of the Research and Machine Intelligence group. The project was extremely successful because of the various experiments I have
+                tried with different Neutral Network arhitectures and Vizier, Google's Black-Box optimization toolbox,
+                    for model parameter optimization.</p>
             </div>
         </div>
         <hr>
