@@ -35,6 +35,11 @@
                         <td>Phone</td>
                         <td><input type="text" class="form-control"></td>
                     </tr>
+                    <tr>
+                        <td>
+                            <button type="button" class="btn btn-success" style="width: 125px;">Upload picture</button>
+                        </td>
+                    </tr>
                 </table>
 
             <h2>Links</h2>
@@ -392,7 +397,13 @@
                 </td>
             </tr>
         </table>
-
+        <table class="table">
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-success" style="width: 125px;">Save</button>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <footer class="container-fluid text-center">

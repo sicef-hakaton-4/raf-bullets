@@ -33,6 +33,7 @@ Route::get('company/test/make', 'CompanyController@makeTest');
 Route::get('company/{id}', 'CompanyController@getCompany');
 Route::get('company/job/new', 'CompanyController@newJob');
 Route::get('company/job/index', 'CompanyController@indexJob');
+Route::get('company/', 'CompanyController@developers');
 
 
 //dodaj ID za route developer/{id}
